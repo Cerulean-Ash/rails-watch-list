@@ -1,1 +1,68 @@
-<h1><%= @list.name %></h1>
+<div class="banner position-relative" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1><%= @list.name %></h1>
+  </div>
+  <span class="movie-tag"><%= pluralize(@list.movies.size, 'movie') %></span>
+</div>
+<div class="container">
+
+
+
+
+  <%= link_to 'add movie',  new_list_bookmark_path(@list), class: 'btn btn-success'%>
+
+
+  <div class="container mb-5">
+    <div class="row my-2">
+        <% @list.movies.each do |movie| %>
+          <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+          <div class="col-12 col-sm-6 mb4">
+            <div class="card show-list-card" style="width: 36rem;">
+              <%= image_tag movie.poster_url, alt: movie.title, class: "movie-img rounded-top" %>
+              <div class="card-body">
+                <div class="card-title-cont">
+                  <h5 class="show-card-title"><%= movie.title %></h5>
+                  <p><%= movie.rating %> ⭐ </p>
+                </div>
+                <p class="card-text"> <%= movie.overview %></p>
+                <div class="show-card-actions">
+                  <p class='show-card-comment'><%= bookmark.comment %></p>
+                  <%= link_to '<i class="fas fa-trash"></i>'.html_safe,
+                    bookmark_path(bookmark),
+                    method: :delete,
+                    data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list" } %>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+    <% end %>
+  </div>
+
+
+
+</div>
+
+
+<div class="container">
+  <div class="d-flex align-items-center justify-content-between mb-3">
+    <h3>My Lists</h3>
+    <%= link_to 'add movie',  new_list_bookmark_path(@list), class: 'btn btn-success'%>
+  </div>
+
+  <div class="cards">
+    <% @list.movies.each do |movie| %>
+      <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+      <div class="card-category show-card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= movie.poster_url%>')">
+        <div class="card-actions" >
+          <%= link_to '<i class="fas fa-trash"></i>'.html_safe,
+          bookmark_path(bookmark),
+          method: :delete,
+          data: { confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list?" } %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

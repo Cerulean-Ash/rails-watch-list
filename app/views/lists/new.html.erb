@@ -1,6 +1,7 @@
 <h1>Create a new list</h1>
 
 <%= simple_form_for @list do |f| %>
-  <%= f.input :name, placeholder: 'Action' %>
+  <%= f.input :name, placeholder: 'Movies' %>
+   <%# f.input :photo %>
   <%= f.submit class: "btn btn-primary" %>
 <% end %>

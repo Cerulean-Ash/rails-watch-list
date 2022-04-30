@@ -1,0 +1,83 @@
+.list-card {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('list-image.jpg'));
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14);
+  margin: 0.5rem 0 1rem 0;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 2px;
+  .list-card-content {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    height: 90%;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .list-card-action {
+    display: flex;
+    justify-content: end;
+    padding: 16px 24px;
+
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+
+.show-list-card {
+  margin-bottom: 24px;
+  img {
+    max-height: 400px;
+    object-fit: cover;
+    background-position: center;
+  }
+}
+
+.index-list-card {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('list-image.jpg'))
+}
+
+
+
+.card-category {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  .card-actions {
+    position: absolute;
+    bottom: 4px;
+    right: 12px;
+    font-size: 1rem;
+  }
+}
+
+.card-category a:hover, .card-actions a:hover {
+  color: $green;
+}
+
+.show-card-image {
+  height: 250px !important;
+  border-radius: 5px 5px 0px 0px !important;
+}
