@@ -10,3 +10,10 @@
   background: #1BCB7F;
   color: white;
 }
+
+.bookmark-delete {
+  color: $gray;
+  &:hover {
+    color: $red;
+  }
+}
