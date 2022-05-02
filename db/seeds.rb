@@ -22,7 +22,7 @@ json['results'].each do |entry|
     title: entry['title'],
     overview: entry['overview'],
     rating: entry['vote_average'],
-    poster_url: "https://image.tmdb.org/t/p/original/#{entry['poster_path']}"
+    poster_url: "https://image.tmdb.org/t/p/w500/#{entry['poster_path']}"
   )
 
   puts "Created #{movie.title}"
