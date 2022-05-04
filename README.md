@@ -93,6 +93,7 @@ Project is: _in progress_
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 To do:
+- Clean up add bookmark modal layout
 - Clean up navbar 
 - Add user authentication
 - Add search functionality
