@@ -22,7 +22,7 @@ This app allows you to create watch lists of your favourite movies.
 - This is a movie watch list web app, written in ruby on rails and hosted on Heroku
 - This app allows you to create a list of movies you'd like to watch or recommend to others and features a review fewature to allow other to review your list
 - What problem does it (intend to) solve?
-- This project was completed as part of the Le Wagon fullstack developer bootcamp and served as an opportunity to to develope my skills in
+- This project was completed as part of the Le Wagon fullstack developer bootcamp and served as an opportunity to develop my skills in:
 + ruby on rails
 + javascript
 + scss
@@ -38,10 +38,10 @@ This app allows you to create watch lists of your favourite movies.
 - yarn 1.22.17
 - SCSS
 - [_select2_](https://select2.org/)
-- AOS - [_Animate On Scroll library_](https://michalsnik.github.io/aos/)
+- [_AOS - Animate On Scroll library_](https://michalsnik.github.io/aos/)
 - [_typed_js_](https://mattboldt.com/demos/typed-js/)
 - Cloudinary image hosting
-- [_ movie database api_](https://developers.themoviedb.org/3/movies/get-top-rated-movies)
+- [_movie database api_](https://developers.themoviedb.org/3/movies/get-top-rated-movies)
 - bootstrap 5
 - fontawesome 6
 - PostgreSQL
