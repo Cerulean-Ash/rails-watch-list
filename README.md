@@ -57,10 +57,14 @@ List the ready features here:
 
 ## Setup
 You will need Ruby 3.0.3 and Rails 6.1.5.1. Both can be installed via rbenv
+You will also need a Cloudinary account (free is sufficient)
 Download/Fork/Clone the repo and cd into the repo root directory in your terminal
 
 To check that you have the correct ruby version run:
 ```ruby --version```
+
+Run: ```touch .env``` followed by ```echo '.env*' >> .gitignore```
+and add your cloudinary api to the .env file ```CLOUDINARY_URL=cloudinary://2985**************D-***********************8```
 
 Then run:
 ```bundle install```
