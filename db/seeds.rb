@@ -13,6 +13,9 @@ json = JSON.parse(response.read)
 
 
 puts "Cleaning database..."
+Bookmark.destroy_all
+Review.destroy_all
+List.destroy_all
 Movie.destroy_all
 
 puts "Creating restaurants..."
