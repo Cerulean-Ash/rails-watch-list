@@ -18,14 +18,14 @@ Review.destroy_all
 List.destroy_all
 Movie.destroy_all
 
-puts "Creating restaurants..."
+puts "Creating movie..."
 
 json['results'].each do |entry|
   movie = Movie.create!(
     title: entry['title'],
     overview: entry['overview'],
     rating: entry['vote_average'],
-    poster_url: "https://image.tmdb.org/t/p/w500/#{entry['poster_path']}"
+    poster_url: "https://image.tmdb.org/t/p/original#{movie['backdrop_path']}"
   )
 
   puts "Created #{movie.title}"
