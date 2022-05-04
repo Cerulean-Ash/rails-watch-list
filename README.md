@@ -71,10 +71,10 @@ Run:
 to install the js packages
 
 Run:
-
-```rails db:create
-rails db:migrate
-rails db:seed```
+```rails db:create```
+```rails db:migrate```
+```rails db:seed```
+to set up your database
 
 Run:
 ```rails s```
@@ -101,6 +101,6 @@ Give credit here.
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [_@Cerulean-Ash_](https://cerulean-ash.github.io/portfolioV2/) - feel free to contact me!
 
 
