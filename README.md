@@ -44,6 +44,7 @@ This app allows you to create watch lists of your favourite movies.
 - [_ movie database api_](https://developers.themoviedb.org/3/movies/get-top-rated-movies)
 - bootstrap 5
 - fontawesome 6
+- PostgreSQL
 
 
 ## Features
@@ -59,86 +60,47 @@ You will need Ruby 3.0.3 and Rails 6.1.5.1. Both can be installed via rbenv
 Download/Fork/Clone the repo and cd into the repo root directory in your terminal
 
 To check that you have the correct ruby version run:
-'''ruby --version'''
+```ruby --version```
 
 Then run:
-'''bundle install'''
+```bundle install```
 to install the required gems
 
 Run:
-'''yarn install'''
+```yarn install```
 to install the js packages
 
 Run:
-'''rails s'''
+
+```rails db:create
+rails db:migrate
+rails db:seed```
+
+Run:
+```rails s```
 to start a local rails server
 
 
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
-
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in progress_
 
 
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Clean up navbar 
+- Add authentication
+- Add search functionality
+- Add Ajax
 
 
 ## Acknowledgements
 Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- This project was inspired by Le Wagon bootcamp watch list project
 
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
 
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
-
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
