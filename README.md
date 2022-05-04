@@ -94,7 +94,7 @@ Include areas you believe need improvement / could be improved. Also add TODOs f
 
 To do:
 - Clean up navbar 
-- Add authentication
+- Add user authentication
 - Add search functionality
 - Add Ajax
 
