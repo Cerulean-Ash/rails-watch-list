@@ -7,7 +7,8 @@ export default class extends Controller {
   connect() {
     $(this.element).select2({
       theme: 'bootstrap-5',
-      width: "100%"
+      width: "100%",
+      dropdownParent: $("#new_movie_modal")
     });
   }
 }

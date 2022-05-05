@@ -72,8 +72,12 @@ a {
   }
 }
 
-.card-category a:hover, .card-actions a:hover {
+.card-category a:hover {
   color: $green;
+}
+
+.card-actions a:hover {
+  color: $red;
 }
 
 .show-card-image {
