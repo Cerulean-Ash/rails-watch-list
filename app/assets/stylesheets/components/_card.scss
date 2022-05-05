@@ -1,33 +1,33 @@
-.list-card {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('list-image.jpg'));
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14);
-  height: 200px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  border-radius: 2px;
-  .list-card-content {
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    height: 90%;
-    h2 {
-      font-weight: bold;
-    }
-  }
-  .list-card-action {
-    display: flex;
-    justify-content: flex-end;
-    padding: 16px 24px;
+// .list-card {
+//   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('list-image.jpg'));
+//   object-fit: cover;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14);
+//   height: 200px;
+//   width: 300px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-content: center;
+//   border-radius: 2px;
+//   .list-card-content {
+//     padding: 24px;
+//     display: flex;
+//     align-items: center;
+//     height: 90%;
+//     h2 {
+//       font-weight: bold;
+//     }
+//   }
+//   .list-card-action {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding: 16px 24px;
 
-  }
-}
+//   }
+// }
 
 a {
   text-decoration: none;
@@ -35,18 +35,18 @@ a {
 }
 
 
-.show-list-card {
-  margin-bottom: 24px;
-  img {
-    max-height: 400px;
-    object-fit: cover;
-    background-position: center;
-  }
-}
+// .show-list-card {
+//   margin-bottom: 24px;
+//   img {
+//     max-height: 400px;
+//     object-fit: cover;
+//     background-position: center;
+//   }
+// }
 
-.index-list-card {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('list-image.jpg'))
-}
+// .index-list-card {
+//   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(asset_path('list-image.jpg'))
+// }
 
 
 
@@ -54,7 +54,7 @@ a {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 180px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;

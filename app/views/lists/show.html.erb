@@ -9,7 +9,14 @@
 <div class="container show-page-cont">
   <div class="d-flex align-items-center justify-content-between mb-3">
     <h3>My Lists</h3>
-    <button type="button" class="btn btn-flat" data-bs-toggle="modal" data-bs-target="#new_movie_modal" >Add a movie </button>
+    <div>
+      <button type="button" class="btn btn-flat" data-bs-toggle="modal" data-bs-target="#new_movie_modal" >Add a movie </button>
+      <%= link_to 'Delete this list',
+              list_path(@list), class: "btn btn-danger",
+              method: :delete,
+              data: { confirm: "Are you sure you want to remove #{@list.name}" } %>
+    </div>
+
   </div>
 
   <div class="show-cards">
@@ -86,12 +93,11 @@
           <%= simple_form_for([@list, @bookmark], remote: true) do |f| %>
             <%= f.association :movie, collection: Movie.all.order(:title), prompt: "Select a movie", input_html: { data: { controller: "select2" }}, label_html: {class: "modal-form-label"} %>
             <%= f.input :comment, placeholder: "Enter a comment about the movie", label_html: {class: "modal-form-label"} %>
-                        <%= f.submit "Add movie", class: "btn btn-flat" %>
-        </div>
-        <div class="modal-footer">
-
+          <div class="modal-footer">
+          <%= f.submit "Add movie", class: "btn btn-flat" %>
           <% end %>
           <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Back</button>
+        </div>
         </div>
       </div>
     </div>
