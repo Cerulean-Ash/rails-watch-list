@@ -16,6 +16,9 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
+  .btn-danger {
+    display: none;
+  }
   .show-cards {
     grid-template-columns: 1fr;
   }
